@@ -1,0 +1,29 @@
+{
+  "selected_model": "GradientBoosting",
+  "selection": "menor RMSE de validação temporal no treino",
+  "rows": 731,
+  "train_rows": 584,
+  "test_rows": 147,
+  "train_start": "2011-01-01",
+  "train_end": "2012-08-06",
+  "test_start": "2012-08-07",
+  "test_end": "2012-12-31",
+  "postgresql_executed": false,
+  "features": [
+    "temperature_2m_mean",
+    "precipitation_sum",
+    "wind_speed_10m_max",
+    "trend",
+    "month_sin",
+    "month_cos",
+    "weekday",
+    "holiday",
+    "workingday"
+  ],
+  "limitations": [
+    "Clima observado do próprio dia: análise retrospectiva condicional, não previsão antecipada operacional.",
+    "Reanálise ERA5 em um ponto representa aproximadamente a área de Washington DC.",
+    "Apenas dois anos e uma cidade; não generalizar a Macapá sem validação local.",
+    "casual e registered excluídos pois somam a variável alvo cnt."
+  ]
+}
